@@ -608,6 +608,56 @@
             </div>
         </div>
     </div>
+<!-- APPOINTMENT MODAL -->
+<div class="appointment-modal">
+    <div class="container">
+        <h2 class="text-center">Fill this form</h2>
+        <p>Please confirm that you would like to request the appoinment:</p>
+    <div id="form-section" class="col-lg-12 dr-consultation-form">
+        <form action="#" method="post" class="contact-form" novalidate="novalidate"
+            onsubmit="return false;">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <label> Full Name* </label><br>
+                    <input type="text" name="your-name" class="form-control name"
+                        placeholder="e.g, louis catena">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label> Your Email*</label><br>
+                    <input type="email" name="your-email" class="form-control email"
+                        placeholder="name@youraddress.com">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <label> Your Phone* </label><br>
+                    <input type="tel" name="your-phone" class="form-control telephone"
+                        placeholder="Fill number">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label> I’m Interested in* </label><br>
+                    <input type="text" name="your-interested-in" class="form-control interest"
+                        placeholder="Health care">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label> Your Message* </label><br>
+                    <textarea name="your-message" cols="40" rows="10" class="form-control message"
+                        placeholder="Text here"></textarea>
+                </div>
+            </div>
+            <p><input type="submit" value="Send message" class="form-control submit">
+                <span class="ajax-loader"></span></p>
+            <p class="note">Your email address will not be published. Required fields are marked *
+            </p>
+            <div class="response-output-succes">Thank you for your message. It has been sent.</div>
+            <div class="response-output-error">One or more fields have an error. Please check and
+                try again.</div>
+        </form>
+    </div>
+</div>
+</div>
 
     <!-- BACK TO TOP -->
     <a href="#" class="back-top back-top-visible"><i class="fas fa-chevron-up" aria-hidden="true"></i></a>
