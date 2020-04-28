@@ -16,10 +16,10 @@ $('.home-blogs').owlCarousel({
         1200:{
             items: 3,
         },
-        991:{
+        768:{
             items: 2,
         },
-        813:{
+        375:{
             items: 1,
         },
     }

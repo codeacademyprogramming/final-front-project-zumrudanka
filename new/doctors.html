@@ -151,7 +151,11 @@
                                     <sup><span class="cart_total">0</span></sup>
                                     <div class="mini-cart mousewheel open">
                                         <div class="mousewheel-inner widget_shopping_cart">
-                                            <p class="woocommerce-mini-cart__empty-message">No products in the basket.</p>
+                                            <ul class="cart_list"></ul>
+                                            <p class="empty-msg">No products in the basket.</p>
+                                            <p class="total">
+                                            <strong>Subtotal:</strong><span class="Price"><span class="">$</span>39.99</span></p>
+                                            <p class="buttons"><a href="cart.html" class="">View basket</a><a href="checkout.html" class="">Checkout</a></p>
                                         </div>
                                     </div>
                                     <a href="javascript:void(0)" id="menu-mobile" class="menu-mobile header-icon d-xl-none"
@@ -164,7 +168,7 @@
                     </div>
                 </div>
                 <nav id="navigation-mobile" class="navbar col-md-12 col-sm-12">
-                    <ul id="menu-main-menu" class="main-nav desktop-nav d-block">
+                    <ul id="menu-main-menu" class="main-nav desktop-nav">
                         <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
                         <li class="nav-item pages">
                             <a href="#" class="nav-link"><span>Pages</span></a>
@@ -322,7 +326,7 @@
                                                     Experience</div>
                                                     <div class="dr-footer">
                                                         <a href="doctor-single.html">View profile</a>
-                                                        <a href="#form-app-popup" class="magic-popups-app">Appointment</a>
+                                                        <a href="#" class="appoinment-form">Appointment</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -345,7 +349,7 @@
                                             Experience</div>
                                             <div class="dr-footer">
                                                 <a href="#">View profile</a>
-                                                <a href="#form-app-popup" class="magic-popups-app">Appointment</a>
+                                                <a href="#" class="appoinment-form">Appointment</a>
                                     </div>
                                 </div>
                             </div>
@@ -367,7 +371,7 @@
                                             Experience</div>
                                             <div class="dr-footer">
                                                 <a href="#">View profile</a>
-                                                <a href="#form-app-popup" class="magic-popups-app">Appointment</a>
+                                                <a href="#" class="appoinment-form">Appointment</a>
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +393,7 @@
                                         Experience</div>
                                         <div class="dr-footer">
                                             <a href="#">View profile</a>
-                                        <a href="#form-app-popup" class="magic-popups-app">Appointment</a>
+                                        <a href="#" class="appoinment-form">Appointment</a>
                                     </div>
                                 </div>
                             </div>
@@ -411,7 +415,7 @@
                                         Experience</div>
                                         <div class="dr-footer">
                                             <a href="#">View profile</a>
-                                        <a href="#form-app-popup" class="magic-popups-app">Appointment</a>
+                                        <a href="#" class="appoinment-form">Appointment</a>
                                     </div>
                                 </div>
                             </div>
@@ -604,13 +608,15 @@
             </div>
         </div>
     </div>
+
     <!-- BACK TO TOP -->
     <a href="#" class="back-top back-top-visible"><i class="fas fa-chevron-up" aria-hidden="true"></i></a>
 </div>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/doctors.js"></script>
+    <script src="js/script.js"></script>
     <script>
         AOS.init();
         </script>

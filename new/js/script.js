@@ -51,14 +51,32 @@ $(document).on('keyup', '.search-field', function () {
       });
 })
 /*==== NAVIGATION BAR MOBILE====*/
+$(document).on('click', '#menu-mobile', function () {
+    $('#navigation-mobile').toggle();
+})
+$(window).scroll(function () {
+    let scroll = $(window).scrollTop();
+    if (scroll > 100) {
+        $("#header").css({
+            position: 'fixed',
+            top: 0
+        });
+        $("#navigation-mobile").css({
+            position: 'fixed'
+        });
+    } else {
+        $("#header").css('position', 'relative');
+        $("#navigation-mobile").css('position', 'relative');
+    }
+});
 
 $(document).on('click', '.red-toggle', function () {
-    let sub = $(this).next();
-    
-    $(this).next().toggle();
-    
+    $('#navigation-mobile .sub_menu.active').removeClass('active');
+    $(this).next().addClass('active');
 })
-
+$(document).on('click', '.red-toggle', function () {
+    $(this).next().toggle();
+})
 
 
 

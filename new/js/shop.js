@@ -85,6 +85,9 @@ $(function () {
     let productCount = 0;
     let total = 0;
     $(document).on('click', '.add-to-cart-btn', function () {
+        $('.empty-msg').hide();
+        $('p.buttons').show();
+        $('p.sub-total').show();
 
         let img = $(this).parent().prev().attr('src');
 
@@ -96,9 +99,6 @@ $(function () {
 
         console.log(total);
 
-        $('.empty-msg').hide();
-        $('p.buttons').show();
-        $('p.sub-total').show();
 
         let cartItemLi = `
 <li class="mini_cart_item">
@@ -133,18 +133,6 @@ $(function () {
             }
             $('.cart_total').text(productCount);
         })
-
-
-
-
-
-
-        function UpdateBasket() {
-            var basket = JSON.parse(localStorage.getItem("basket"));
-            document.querySelector('#basket-count').innerText = basket.length; // document.querySelector('#basket-count').innerText = basket.reduce((t, p) => t + p.count, 0);
-        }
-
-
 
     })
 })
