@@ -3,14 +3,12 @@ $(function () {
     $(document).on('click', '.appoinment-form', function () {
         $('.appointment-modal').show();
 
-        $(document).on('click', '.appointment-modal', function () {
-        $('.appointment-modal').hide();
-            
-        })
+        $(window).on('click', function(event){
+            if(event.target.id == 'myModal'){
+                $('#myModal').css({display: "none"});
+            }
+        });
     })
-
-
-
 
 
 })
