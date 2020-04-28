@@ -279,7 +279,22 @@ margin-bottom: 15px;
         max-width: 730px;
         margin: 0 auto;
         background: #fff;
+        position: absolute;
+        left: 22%;
+        top:100%;
         padding: 40px 50px 28px;
+        animation-delay: 0.2s;
+        animation-duration: 1s;
+        animation-name: form;
+        animation-iteration-count: 1;
+}
+@keyframes form{
+0%{
+top:100%;
+}
+100%{
+top:0;
+}
 }
 .appointment-modal .container h2 {
     font-size: 36px;

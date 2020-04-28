@@ -110,23 +110,19 @@ $(function () {
         productCount++;
 
         $('.cart_total').text(productCount);
-
-        // console.log(listLength);
-
-        $('p.sub-total').append(total);
-
-
+        $('span.Price').append(total);
 
         let listLength = $('.cart_list li').length;
 
+        console.log(listLength);
+        
+
         $(document).on('click', '.remove_from_cart_button', function () {
             $(this).parent('li').remove();
-            UpdateBasket()
-            if (listLength === 0) {
+            if (listLength > 0) {
                 productCount--;
 
             } else {
-                productCount = 0;
                 $('.empty-msg').show();
                 $('p.buttons').hide();
                 $('p.sub-total').hide();
