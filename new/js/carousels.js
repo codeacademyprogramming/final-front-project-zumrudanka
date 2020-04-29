@@ -39,9 +39,12 @@ $('.testimonials-carousel').owlCarousel({
         991:{
             items: 2,
         },
-        813:{
+        768:{
             items: 1,
         },
+        375:{
+            items: 1,
+        }
     }
 })
 

@@ -250,7 +250,7 @@ ul {
 
 .fsb-modal {
     display: none;
-    transition-delay: 2s;
+ 
 }
 
 .overlay {
@@ -270,7 +270,6 @@ ul {
     top: 0;
     left: 0;
     opacity: 0;
-    transition-delay: 2s;
     transition: all 0.3s;
 }
 
@@ -292,12 +291,13 @@ ul {
 .md-modal {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 35%;
     max-width: 630px;
     min-width: 320px;
     height: auto;
     backface-visibility: hidden;
-    transform: translateX(-50%) translateY(-50%);
+    animation-name: color;
+ 
 }
 
 .md-content {
@@ -307,8 +307,36 @@ ul {
     border-radius: 3px;
     margin: 0 auto;
     display: none;
-    transition-delay: 2s;
+    animation-name: color  ;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    perspective: 1300px;
+    
+  
 }
+@keyframes color {
+    0%{
+        transform: rotate(180deg);
+        transition-delay: 0.3s;
+
+    }
+    25%{
+     
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(45deg);
+   
+    }
+    100%{
+        transform: rotate(0);
+      
+    }
+
+
+}
+
 
 .success {
     padding-bottom: 0;
@@ -655,20 +683,19 @@ button {
     background: #fff;
 }
 
-.booking-form input[type="text"],
-.booking-form.layout3 select {
+.booking-form.layout3 input[type="text"], .booking-form.layout3 input[type="email"], .booking-form.layout3 input[type="phone"], .booking-form.layout3 input[type="tel"], .booking-form.layout3 input[type="password"], .booking-form.layout3 input[type="search"], .booking-form.layout3 input[type="time"], .booking-form.layout3 input[type="url"], .booking-form.layout3 input[type="file"], .booking-form.layout3 input[type="image"], .booking-form.layout3 select, .booking-form.layout3 textarea {
     line-height: 28px;
     height: 50px;
     font-size: 14px;
     font-weight: 500;
     border-color: #f5f5f5 !important;
-    background-color: #f5f5f5 !important;
+    background-color: #f5f5f5;
     color: #777;
     border-radius: 0;
     padding: 5px 23px;
 }
 
-form input[type="text"],
+form input[type="text"],form input[type="email"],form input[type="tel"],
 select {
     width: 100%;
     padding: 11px 20px;
@@ -701,6 +728,22 @@ select {
 .booking-form.layout3 input[type="text"]:hover,
 .booking-form.layout3 select:hover,
 .booking-form.layout3 input[type="text"]:active {
+    border-color: rgba(0, 125, 242, 1) !important;
+    background-color: #fff;
+    box-shadow: none;
+
+}
+.booking-form.layout3 input[type="email"]:hover,
+.booking-form.layout3 select:hover,
+.booking-form.layout3 input[type="email"]:active {
+    border-color: rgba(0, 125, 242, 1) !important;
+    background-color: #fff;
+    box-shadow: none;
+
+}
+.booking-form.layout3 input[type="tel"]:hover,
+.booking-form.layout3 select:hover,
+.booking-form.layout3 input[type="tel"]:active {
     border-color: rgba(0, 125, 242, 1) !important;
     background-color: #fff;
     box-shadow: none;
@@ -850,6 +893,15 @@ select {
     .department-page-title-wrap {
         width: 87% !important;
     }
+    #navigation-mobile{
+        padding: 0;
+    }
+    #navigation-mobile ul{
+        display: block !important;
+    }
+    #navigation{
+        display: none;
+    }
 
     .recent-item {
         width: 210px !important;
@@ -989,6 +1041,15 @@ select {
         padding: 30px 15px 63px;
 
         margin-left: 12px;
+    }
+    #navigation-mobile{
+        padding: 0;
+    }
+    #navigation-mobile ul{
+        display: block !important;
+    }
+    #navigation{
+        display: none;
     }
 
     .full-page {
