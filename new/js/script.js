@@ -94,7 +94,7 @@ function setTimer() {
     $('.layers-div').eq(sliderCount).fadeIn(1000);
     $('.layer-1').eq(sliderCount).slideDown(700);
     $('.layer-2').eq(sliderCount).slideDown(750);
-    $('.layer-3-button').eq(sliderCount).fadeIn(750);
+    $('.layer-3-button').eq(sliderCount).show(750);
     $('.tp-bullet.selected').removeClass('selected');
     $('.tp-bullet').eq(sliderCount).addClass('selected');
 };
@@ -116,14 +116,11 @@ $(document).on('click', '.tp-bullet', function () {
 
 /* ==== VIDEO MODAL ==== */
 $(document).on('click', '.cms-video-popup', function () {
-    $('.video-modal').show(1000);
+    $('.video-modal').fadeIn();
     $(document).on('click', '.video-close', function () {
-    $('.video-modal').hide();
+    $('.video-modal').fadeOut(300);
     })
 })
-
-
-
 
 /* ==== BUTTON TO TOP ==== */
 let ScrolledAmount = 600;

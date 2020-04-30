@@ -6,13 +6,9 @@ $(document).on('click', 'input#submit', function () {
     let userEmail = $('#email').val();
     let comment = $('#comment').val();
 
-console.log(userName);
-console.log(userEmail);
-console.log(comment);
-
     if(userName && userEmail && comment){
         let fullBox = `
-        <div class="comment even thread-odd thread-alt depth-1 depth-1-last" id="comment-47">
+        <div class="comment main-comment new-comment">
                                 <div class="comment-inner clearfix">
                                     <div class="comment-content">
                                         <div class="comment-author-image">

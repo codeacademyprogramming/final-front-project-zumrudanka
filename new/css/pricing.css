@@ -197,13 +197,14 @@ border: 1px solid #007DF2;
     .full-page{
         overflow: hidden;
     }
-   .owl-stage-outer{
-       width: 506px !important;
-       overflow: visible !important;
-   }
+
    .owl-item{
        width: auto !important;
    }
+   .pricing-carousel{
+    padding-left: 10px;
+    padding-right: 10px;
+   } 
    .carousel-field{
        padding-left: 0;
        padding-right: 0;
@@ -242,8 +243,12 @@ border: 1px solid #007DF2;
       }
 }
 @media (max-width: 375px) {
- 
- 
+ .owl-item{
+     margin-right: 0;
+ }
+ .owl-stage-outer{
+     padding: 0;
+ }
     /* foooter */
 .row_list{
     display: block !important;

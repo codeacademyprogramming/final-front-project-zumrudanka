@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/checkout.css">
+
+
+
+
     <title>Checkout</title>
 </head>
 
@@ -150,7 +155,7 @@
                                             <ul class="cart_list"></ul>
                                             <p class="empty-msg">No products in the basket.</p>
                                             <p class="total">
-                                            <strong>Subtotal:</strong><span class="Price"><span class="">$</span></span></p>
+                                            <strong>Subtotal:</strong><span class="Price"><span class="">$</span>39.99</span></p>
                                             <p class="buttons"><a href="cart.html" class="">View basket</a><a href="checkout.html" class="">Checkout</a></p>
                                         </div>
                                     </div>
@@ -225,6 +230,7 @@
             </div>
     
         </header>
+
         <!-- CHECKOUT MAIN -->
         <main  id="check-main" class="check-main container">
 
@@ -247,7 +253,7 @@
                             </span>
 
                         </div>
-                        <form class="checkOut" action="" method="post">
+                        <form class="checkOut" action="" method="post" onsubmit="return false">
                             <div class="col2-set">
                                 <div class="col-1">
 
@@ -255,7 +261,7 @@
                                         <h3>Billing details</h3>
                                         <div class="billing-wrapper">
                                             <p class="form-row">
-                                                <select name="" id="">
+                                                <select name="country" id="country">
                                                     <option value="">Select a country…</option>
                                                     <option value="">Afghanistan</option>
                                                     <option value="">Antigua and Barbuda</option>
@@ -268,55 +274,55 @@
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="text" placeholder="First Name *" required>
+                                                    <input class="Name" type="text" placeholder="First Name *" required >
                                                 </span>
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="text" placeholder="Last Name *" required>
+                                                    <input class="surname" type="text" placeholder="Last Name *" required>
                                                 </span>
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="text" placeholder="Company Name" required>
+                                                    <input class="company" type="text" placeholder="Company Name" required>
                                                 </span>
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="text" placeholder="House number and street name"
+                                                    <input class="street" type="text" placeholder="House number and street name"
                                                         required>
                                                 </span>
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="text"
+                                                    <input class="apartment" type="text"
                                                         placeholder="Apartment, suite, unit, etc. (optional)" required>
                                                 </span>
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="text" placeholder="City" required>
+                                                    <input class="city" type="text" placeholder="City" required>
                                                 </span>
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="text" placeholder="State" required>
+                                                    <input class="state" type="text" placeholder="State" required>
                                                 </span>
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="text" placeholder="Postcode" required>
+                                                    <input class="code" type="text" placeholder="Postcode" required>
                                                 </span>
                                             </p>
 
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="tel" placeholder="Phone" required>
+                                                    <input class="tel" type="tel" placeholder="Phone" required>
                                                 </span>
                                             </p>
                                             <p class="form-row">
                                                 <span class="row-span">
-                                                    <input type="email" placeholder="Email Address *" required
+                                                    <input class="email" type="email" placeholder="Email Address *" required
                                                         aria-required="true">
                                                 </span>
                                             </p>
@@ -558,7 +564,7 @@
 
         </main>
         <!-- ADDITIONAL SECTION -->
-        <div class="second-main container "  style="display: none;" >
+        <div class="second-main container " style="display: none;"   >
         
             <div class="row">
                 <div class="content-area blog-grid-style-5 col-lg-12">
@@ -580,7 +586,7 @@
             </div>
         </div>
         <!-- COMPLETED SECTION -->
-        <div class="third-main container" style="padding-top: 90px; display: none;" >
+        <div class="third-main container" style="padding-top: 90px; display:none;" >
             <div class="row">
                 <div class="content-area blog-grid-style-5 col-lg-12">
 
@@ -612,7 +618,7 @@
 
                         </ul>
                         <p>Pay with cash upon delivery.</p>
-                        <section class="details" style="display: none;">
+                        <section class="details" >
                             <h2 class="order-title">Order details</h2>
                             <table class="order_details">
                                 <thead>

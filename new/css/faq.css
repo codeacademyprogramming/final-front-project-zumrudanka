@@ -1,3 +1,4 @@
+
 body {
   background-color: #F5F5F5;
 }
@@ -150,19 +151,6 @@ body {
   padding-left: 15px
 }
 
-
-.accordion:after {
-  content: '\002B';
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-
 .active,
 .accordion:hover {
   background-color: #017EF2 !important;
@@ -173,8 +161,7 @@ body {
 .panel {
   padding: 0 18px;
   background-color: white;
-  max-height: 0;
-  overflow: hidden;
+
   transition: max-height 0.2s ease-out;
 
 }
@@ -326,6 +313,15 @@ li.active_c .title-text h5 {
   .col-sm-6 {
     width: 50%;
   }
+  #navigation-mobile{
+    padding: 0;
+}
+#navigation-mobile ul{
+    display: block !important;
+}
+#navigation{
+    display: none;
+}
 
   #form-section {
     float: right;
@@ -408,6 +404,15 @@ li.active_c .title-text h5 {
   display: flex;
   flex-wrap: wrap;
   }
+  #navigation-mobile{
+    padding: 0;
+}
+#navigation-mobile ul{
+    display: block !important;
+}
+#navigation{
+    display: none;
+}
   .vc_tta-tabs-container {
     padding-left: 15px !important;
     width: 100% !important;
@@ -489,4 +494,12 @@ h3.footer-title{
    width: 175px !important;
  }
 
+}
+span.toggle2{
+  width: 34px;
+  height: 44px;
+  position: absolute;
+  right: 49px;
+  text-align: center;
+  cursor: pointer;
 }

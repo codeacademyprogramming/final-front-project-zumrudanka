@@ -228,17 +228,15 @@ h2.comments-title {
     border-top: #e6e6e6 solid 1px;
     padding-top: 40px;
 }
-#comment-46 {
+.main-comment{
+    border-bottom: #e6e6e6 solid 1px;
     border-top: none;
     padding-top: 0;
     margin-top: 0;
 }
-.comment-list .comment{
-    border-bottom: #e6e6e6 solid 1px;
-    margin-top: 33px;
-    padding-top: 40px;
+.new-comment{
+    padding: 30px 0;
 }
-
 .comment-author-image {
     width: 135px;
     padding-right: 35px;
@@ -287,7 +285,7 @@ h2.comments-title {
 .comment-list .comment .comment {
     width: calc(100% - 50px);
 }
-.depth-1-last{
+.main-comment-second{
     border-bottom: none;
 }
 /* respond */
@@ -572,8 +570,33 @@ h3.tagcloud-head{
       .full-page{
         overflow: hidden;
       }
+      .nav-box div.h3{
+          display: none;
+      }
 }
 @media (max-width: 375px) {
+    .nav-box div.h3{
+        display: none;
+    }
+    .arrow-right{
+        padding: 0;
+    }
+    .arrow-left{
+        padding: 0;
+    }
+    .nav-next{
+        padding-left: 0;
+    }
+    .comment-author-image{
+        display: none;
+    }
+    .comment-content-main{
+        width: 100%;
+    }
+    .comment-list-area{
+padding-left: 0;
+padding-right: 0;
+    }
     .d-flex{
         display: block !important;
     }

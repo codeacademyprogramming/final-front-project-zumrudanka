@@ -12,6 +12,7 @@ $('.home-blogs').owlCarousel({
     margin:30,
     nav: false,
     dots: false,
+    responsiveClass:true,
     responsive:{
         1200:{
             items: 3,
@@ -32,6 +33,7 @@ $('.testimonials-carousel').owlCarousel({
     margin:30,
     nav: false,
     dots: false,
+    responsiveClass:true,
     responsive:{
         1200:{
             items: 4,
@@ -53,17 +55,20 @@ $('.testimonials-carousel').owlCarousel({
     $('.pricing-carousel').owlCarousel({
         loop: true,
         nav: false,
-        margin: 10,
+        margin: 15,
         dots: false,
+        responsiveClass:true,
         responsive:{
             1200:{
                 items: 3,
             },
-            991:{
+            768:{
                 items: 2,
             },
-            813:{
+            375:{
                 items: 1,
+                 margin: 0,
+
             },
         }
     })
@@ -71,14 +76,5 @@ $(document).on('click', '.pricing-item',function () {
     $('.pricing-item.selected').removeClass('selected');
     $(this).addClass('selected');
 })
-
-
-
-
-$('.zero').counterUp({
-    delay: 10,
-    time: 1000
-})
-
 
 })

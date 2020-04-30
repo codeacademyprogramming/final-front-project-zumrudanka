@@ -247,22 +247,26 @@ ul {
 }
 
 /* MODAL */
-
+ 
 .fsb-modal {
     display: none;
+    opacity: 0;
+   animation-name: border;
  
 }
-
+ 
+ 
+ 
 .overlay {
     opacity: 1;
     visibility: visible;
 }
-
+ 
 .overlay {
     background: rgba(0, 0, 0, 0.7);
     z-index: 9998;
 }
-
+ 
 .overlay {
     position: fixed;
     width: 100%;
@@ -272,22 +276,22 @@ ul {
     opacity: 0;
     transition: all 0.3s;
 }
-
+ 
 .md-modal {
-
+ 
     perspective: 1300px;
     width: 450px;
-
+ 
 }
-
+ 
 .md-modal {
     z-index: 9999;
 }
-
+ 
 .modal-show {
     visibility: visible;
 }
-
+ 
 .md-modal {
     position: fixed;
     top: 50%;
@@ -296,10 +300,10 @@ ul {
     min-width: 320px;
     height: auto;
     backface-visibility: hidden;
-    animation-name: color;
+  
  
 }
-
+ 
 .md-content {
     color: #0b0b0b;
     background: rgb(248, 240, 240);
@@ -312,48 +316,62 @@ ul {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     perspective: 1300px;
+    animation-delay: .7s;
+    opacity: 0;
+    
+  
     
   
 }
 @keyframes color {
     0%{
         transform: rotate(180deg);
-        transition-delay: 0.3s;
-
+        opacity: 0;
+    
+ 
+    }
+    15%{
+        transform: rotate(180deg);
+        opacity: 1;
+    
+ 
     }
     25%{
      
         transform: rotate(90deg);
+        opacity: 1;
     }
     50%{
         transform: rotate(45deg);
+        opacity: 1;
    
     }
     100%{
         transform: rotate(0);
+        opacity: 1;
       
     }
-
-
+ 
+ 
 }
-
-
+ 
+ 
 .success {
     padding-bottom: 0;
     margin-bottom: 10px;
     font-size: 15px;
     line-height: 26px;
 }
-
+ 
 .success {
     padding: 32px 0px 0px 0px;
 }
-
+ 
 p.success {
     color: black;
     text-align: center;
 }
-
+ 
 .md-content>div {
     padding: 15px 40px 30px;
     margin: 0;
@@ -361,25 +379,25 @@ p.success {
     font-size: 1.15em;
     text-align: center;
 }
-
+ 
 .button-request button {
     margin-top: 0;
 }
-
+ 
 .button-request button {
     display: inline-block;
     background: rgba(0, 125, 242, 1);
 }
-
+ 
 button.md-close.fa-ok {
     width: 40%;
 }
-
+ 
 .md-content button {
     font-size: 17px;
     padding: 10px;
 }
-
+ 
 button {
     cursor: pointer;
     text-align: center;
@@ -395,7 +413,7 @@ button {
     border-style: solid;
     border-width: 0px 0px 0px 0px;
     border-radius: 5px;
-
+ 
     transition: all 300ms linear 0ms !important;
 }
 

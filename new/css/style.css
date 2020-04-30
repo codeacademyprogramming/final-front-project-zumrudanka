@@ -627,7 +627,7 @@ margin-top: 4px;
 
 
 #header-search-modal {
-    top: 0;
+    top: 100%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -638,8 +638,21 @@ margin-top: 4px;
     background: rgba(11, 11, 11, 0.95);
     animation: scaleUp 0.65s ease-in-out forwards;
     display: none;
+    transform: scale(0.5);
+    animation-name: search;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
-
+@keyframes search{
+    0%{
+    top: 100%;
+    transform: scale(0.5);
+    }
+    100%{
+        top: 0;
+    transform: scale(1);
+    }
+}
 .modal-close {
     display: block;
     text-align: center;
@@ -804,15 +817,10 @@ ul#home-slider li.active-main{
     background-size: cover;
   }
 
-  .layers-div{
-      position: relative;
-      left: 58px;
-      top: 150px;
-      display: block;
-      height: auto;
-  }
-
-.layer-1{
+    .layer-1{
+    position: relative;
+    left: 58px;
+    top: 150px;
     z-index: 6;
     min-width: 440px;
     max-width: 440px;
@@ -837,6 +845,9 @@ ul#home-slider li.active-main{
     background: transparent;
 }
 .layer-2{
+    position: relative;
+    left: 58px;
+    top: 170px;
     z-index: 7;
     font-size: 16px;
     line-height: 22px;
@@ -889,8 +900,28 @@ ul#home-slider li.active-main{
     border-style: solid;
     display: none;
     position: relative;
-    top: 0;
-    left: 0;
+    top: 210px;
+    left: 58px;
+    opacity: 0 !important;
+    animation-name: slideButton;
+    animation-duration: .6s;
+    animation-delay: .8s;
+    animation-fill-mode: forwards;
+    transition: all ease .6s;
+}
+@keyframes slideButton{
+    0%{
+        top:300px;
+        opacity: 0;
+    }
+    5%{
+        top:300px;
+        opacity: 1;
+    }
+    100%{
+        top:210px;
+        opacity: 1;
+    }
 }
 
 .hermes.tp-bullets{
@@ -1353,10 +1384,9 @@ ul#home-slider li.active-main{
     right: 0;
     background: rgba(11, 11, 11, 0.95);
     z-index: 999999;
-    animation: scaleUp 0.65s ease-in-out forwards;
-    /* transform: scale(0.6); */
     opacity: 1;
     display: none;
+
 }
 
 .video-modal-content{
@@ -1364,7 +1394,7 @@ ul#home-slider li.active-main{
     padding-bottom: 30px;
     cursor: auto;
     position: absolute;
-    top: 35%;
+    top: 15%;
     left: 16%;
     display: inline-block;
     vertical-align: middle;
@@ -1372,13 +1402,27 @@ ul#home-slider li.active-main{
     text-align: center;
     z-index: 1045;
     max-width: 900px;
-    max-height: 450px;
+    height: 450px;
     width: 100%;
+    transform: scale(0.2);
+    animation-name: scale;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
+@keyframes scale{
+    0%{
+    transform: scale(0.2);
+    }
+    100%{
+    transform: scale(1);
+
+    }
 }
 
-.video-iframe{
+.video-modal-content iframe{
     width: 100%;
-    height: auto;
+    height: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     background: #000;
 }
@@ -2445,7 +2489,6 @@ p {
         display: none;
     }
 }
-
  
 @media (max-width: 375px) {
     .full-page{
@@ -2457,6 +2500,63 @@ p {
     #header-top{
         display: none;
     }
+    #rev_main-slider{
+        height: 400px;
+    }
+    .layer-1 {
+        z-index: 6;
+        min-width: 173px;
+        max-width: 173px;
+        white-space: normal;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 600;
+        color: rgb(48, 48, 48);
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        min-height: 91px;
+        max-height: 91px;
+        top: 100px;
+    }
+    
+    .layer-2 {
+    top: 120px;
+    z-index: 7;
+    font-size: 10px;
+    line-height: 21px;
+    font-weight: 600;
+    color: rgb(48, 48, 48);
+    letter-spacing: 5px;
+    margin: 0px;
+    padding: 0px;
+}
+.layer-3-button{
+    max-width: 109px;
+    font-size: 12px;
+    line-height: 17px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 9px 20px;
+    letter-spacing: 0px;
+}
+@keyframes slideButton{
+    0%{
+        top:200px;
+        opacity: 0;
+    }
+    5%{
+        top:200px;
+        opacity: 1;
+    }
+    100%{
+        top:160px;
+        opacity: 1;
+    }
+}
+.tp-bullets{
+    display: none !important;
+}
  .isotope-item img{
      width: 100% !important;
  }
@@ -2717,4 +2817,3 @@ p {
         justify-content: center;
     }
 } 
-
