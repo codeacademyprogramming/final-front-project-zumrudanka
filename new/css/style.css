@@ -2129,7 +2129,7 @@ img {
 }
 
 @media (max-width: 767px) {
-    .header-top {
+    #header-top {
         display: none;
     }
 
@@ -2670,6 +2670,9 @@ p {
  
 }    
 @media (max-width: 375px) {
+    #header-top{
+        display: none !important;
+    }
     .full-page{
         overflow: hidden;
     }
