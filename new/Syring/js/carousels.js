@@ -28,7 +28,9 @@ $('.home-blogs').owlCarousel({
 
 /*== HOME TESTIMONIALS CAROUSEL ==*/
 $('.testimonials-carousel').owlCarousel({
+    center: true,
     loop: true,
+    items: 2,
     autoplay:false,
     margin:30,
     nav: false,
@@ -39,13 +41,18 @@ $('.testimonials-carousel').owlCarousel({
             items: 4,
         },
         991:{
-            items: 2,
+            items: 3,
+            center: false,
         },
         768:{
-            items: 1,
+            items: 2,
+            center: true,
         },
         375:{
             items: 1,
+            center: false,
+            stagePadding: 15,
+            autoplay: true,
         }
     }
 })
@@ -67,8 +74,6 @@ $('.testimonials-carousel').owlCarousel({
             },
             375:{
                 items: 1,
-                 margin: 0,
-
             },
         }
     })

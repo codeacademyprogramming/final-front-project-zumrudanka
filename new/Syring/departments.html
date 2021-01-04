@@ -1,23 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/54e137977b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/departments.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/checkout.css">
-
-
-
-
-    <title>Checkout</title>
+    <script src="https://kit.fontawesome.com/54e137977b.js" crossorigin="anonymous"></script>
+    <title>Departments</title>
 </head>
-
 <body>
     <div class="full-page">
         <!-- HEADER & NAVIGATION BAR -->
@@ -155,7 +151,7 @@
                                             <ul class="cart_list"></ul>
                                             <p class="empty-msg">No products in the basket.</p>
                                             <p class="total">
-                                            <strong>Subtotal:</strong><span class="Price"><span class="">$</span>39.99</span></p>
+                                            <strong>Subtotal:</strong><span class="Price"><span class="">$</span></span></p>
                                             <p class="buttons"><a href="cart.html" class="">View basket</a><a href="checkout.html" class="">Checkout</a></p>
                                         </div>
                                     </div>
@@ -230,455 +226,253 @@
             </div>
     
         </header>
-
-        <!-- CHECKOUT MAIN -->
-        <main  id="check-main" class="check-main container">
-
+        <!-- TITLE SECTION -->
+        <div class="page-title-wrapper">
+            <div class="page-title-inner container">
+                <div class="row1 align-items-center">
+                    <div id="page-title" class="red-page-title col-md-6">
+    
+                        <div class="red-page-title-text">
+    
+                            <div class="title">Medical Department</div>
+                        </div>
+                    </div>
+                    <div id="breadcrumb" class="breadcrumb col-md-6">
+                        <div class="breadcrumb-inner">
+                            <span>
+    
+                                <a href="index.html">
+                                    <span property="name">Home</span>
+                                </a>
+                            </span>
+                            <span>
+    
+                                &nbsp;/&nbsp;<span><span property="name">Medical Department</span>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MAIN SECTION -->
+    
+        <main class="container main container-department">
             <div class="row">
                 <div id="content-area" class="content-area blog-grid-style-5 col-lg-12">
-                    <div class="billing-details">
-                        <div class="notice"> </div>
-                        <div style="margin-bottom: 30px;" class="info-billing">
-
-                            Have a coupon?
-                            <a style="color: black;" href="#">Click here to enter your code</a>
-
-                        </div>
-                        <form action=""></form>
-                        <div class="notice"></div>
-                        <div class="checkout-heading">
-                            <h3 class="checkout-heading-title">Cart Checkout</h3>
-                            <span class="silent-heading">
-                                <a href="">Return to shoping cart</a>
-                            </span>
-
-                        </div>
-                        <form class="checkOut" action="" method="post" onsubmit="return false">
-                            <div class="col2-set">
-                                <div class="col-1">
-
-                                    <div class="billing-fields">
-                                        <h3>Billing details</h3>
-                                        <div class="billing-wrapper">
-                                            <p class="form-row">
-                                                <select name="country" id="country">
-                                                    <option value="">Select a country…</option>
-                                                    <option value="">Afghanistan</option>
-                                                    <option value="">Antigua and Barbuda</option>
-                                                    <option value="">Azerbaijan</option>
-                                                    <option value="">Belarus</option>
-                                                    <option value="">Bonaire, Saint Eustatius and Saba</option>
-                                                    <option value="">Greenland</option>
-                                                    <option value="">UK</option>
-                                                </select>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="Name" type="text" placeholder="First Name *" required >
-                                                </span>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="surname" type="text" placeholder="Last Name *" required>
-                                                </span>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="company" type="text" placeholder="Company Name" required>
-                                                </span>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="street" type="text" placeholder="House number and street name"
-                                                        required>
-                                                </span>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="apartment" type="text"
-                                                        placeholder="Apartment, suite, unit, etc. (optional)" required>
-                                                </span>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="city" type="text" placeholder="City" required>
-                                                </span>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="state" type="text" placeholder="State" required>
-                                                </span>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="code" type="text" placeholder="Postcode" required>
-                                                </span>
-                                            </p>
-
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="tel" type="tel" placeholder="Phone" required>
-                                                </span>
-                                            </p>
-                                            <p class="form-row">
-                                                <span class="row-span">
-                                                    <input class="email" type="email" placeholder="Email Address *" required
-                                                        aria-required="true">
-                                                </span>
-                                            </p>
-                                        </div>
-
-                                    </div>
+                    <div class="info"data-aos="fade-up"
+                    data-aos-duration="1000" >
+    
+                        <div class="wpb_column vc_column_container vc_col-sm-6 ">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <h1 class="heading">
+                                        <span class="style1">Expert physician and caring clinical staff provide you with
+                                            an</span>
+                                        <span class="style1 primary-color">exceptional patient care.</span>
+                                    </h1>
                                 </div>
-                                <div class="col-2">
-                                    <div class="shipping-fields">
-                                        <h3 id="different-adress">
-
-                                            <label>
-                                                <input class="check" type="checkbox">
-                                                <span>Deliver to a different address?</span>
-                                            </label>
-                                        </h3>
-                                        <div class="shipping-adress" style="display: none;">
-                                            <div class="billing-wrapper">
-                                                <p class="form-row">
-                                                    <select name="" id="">
-                                                        <option value="">Select a country…</option>
-                                                        <option value="">Afghanistan</option>
-                                                        <option value="">Antigua and Barbuda</option>
-                                                        <option value="">Azerbaijan</option>
-                                                        <option value="">Belarus</option>
-                                                        <option value="">Bonaire, Saint Eustatius and Saba</option>
-                                                        <option value="">Greenland</option>
-                                                        <option value="">UK</option>
-                                                    </select>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="text" placeholder="First Name *" required>
-                                                    </span>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="text" placeholder="Last Name *" required>
-                                                    </span>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="text" placeholder="Company Name" required>
-                                                    </span>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="text" placeholder="House number and street name"
-                                                            required>
-                                                    </span>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="text"
-                                                            placeholder="Apartment, suite, unit, etc. (optional)"
-                                                            required>
-                                                    </span>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="text" placeholder="City" required>
-                                                    </span>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="text" placeholder="State" required>
-                                                    </span>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="text" placeholder="Postcode" required>
-                                                    </span>
-                                                </p>
-
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="tel" placeholder="Phone" required>
-                                                    </span>
-                                                </p>
-                                                <p class="form-row">
-                                                    <span class="row-span">
-                                                        <input type="email" placeholder="Email Address *" required
-                                                            aria-required="true">
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="additional-fields  ">
-                                        <div class="add-wrapper">
-                                            <p class="form-row notes ">
-                                                <span class="row-span">
-                                                    <textarea class="input-text " name="order_comments"
-                                                        id="order_comments" placeholder="Order Notes" cols="5"
-                                                        rows="2"></textarea>
-                                                </span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
                             </div>
-                            <h3 style="margin-top: 26px;">Your order</h3>
-
-                            <div id="order-review">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th class="product-name">Product</th>
-                                            <th class="product-total">Total</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                A Omron 3 Series Blood Pressur</td>
-                                            <td>
-                                                <span>
-                                                    <span>$</span>
-                                                    39.99
-                                                </span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Subtotal</th>
-                                            <td>
-                                                <span>
-                                                    <span>$</span>
-                                                    39.99
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Shipping</th>
-                                            <td>
-                                                <ul style="display: block; padding-left: 0;">
-                                                    <li>
-                                                        <input type="radio" name="radio" value="text">
-                                                        <label>Free shipping</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="radio" value="text">
-                                                        <label>Flat Rate</label>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Total</th>
-                                            <td>
-                                                <strong>
-                                                    <span>
-                                                        <span>$</span>
-                                                        39.99
-                                                    </span>
-                                                </strong>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                <div class="payment">
-                                    <h3 class="payment-method">Payment Method</h3>
-                                    <ul class="methods" style="display: block; padding-left: 0;">
-                                        <li class="transfer">
-                                            <input type="radio" name="radio" value="text" class="radio-1">
-                                            <label>
-                                                Direct bank transfer </label>
-                                            <div class="privacyText show">
-                                                <p>Make your payment directly into our bank account. Please use your
-                                                    Order ID as the payment reference. Your order will not be shipped
-                                                    until the funds have cleared in our account.</p>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-6">
+    
+                            <div class="vc_column-inner vc_custom_1561103875382">
+                                <div class="vc_column-inner vc_custom_1561103875382">
+    
+                                    <div
+                                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-offset-1 vc_col-md-11">
+    
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <p class="medi_info">Syring Medical Center provide patients with choices to
+                                                    ask for the conducting and analyzing of several lab tests on-site at no
+                                                    cost for prioritized patients or at 70% for people with an insurance.
+                                                    Additional testing can be ordered off site; those costs are the
+                                                    responsibility of the enquirers.</p>
                                             </div>
-                                        </li>
-
-                                        <li class="transfer">
-                                            <input type="radio" name="radio" value="text">
-                                            <label>
-                                                Direct bank transfer </label>
-                                            <div class="privacyText">
-                                                <p>Make your payment directly into our bank account. Please use your
-                                                    Order ID as the payment reference. Your order will not be shipped
-                                                    until the funds have cleared in our account.</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="transfer">
-                                            <input type="radio" name="radio" value="text">
-                                            <label>
-                                                Direct bank transfer </label>
-                                            <div class="privacyText">
-                                                <p>Make your payment directly into our bank account. Please use your
-                                                    Order ID as the payment reference. Your order will not be shipped
-                                                    until the funds have cleared in our account.</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="transfer">
-                                            <input type="radio" name="radio" value="text">
-                                            <label>
-                                                Direct bank transfer </label>
-                                            <div class="privacyText">
-                                                <p>Make your payment directly into our bank account. Please use your
-                                                    Order ID as the payment reference. Your order will not be shipped
-                                                    until the funds have cleared in our account.</p>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                    <div class="form-row">
-
-
-                                        <div class="privacy-text">
-                                            <p>Your personal data will be used to process your order, support your
-                                                experience throughout this website, and for other purposes described in
-                                                our
-
-                                                <a href="#">privacy policy</a>
-                                            </p>
                                         </div>
-                                        <button class="paypass" type="submit">Place order</button>
                                     </div>
                                 </div>
-
                             </div>
-
-
-                        </form>
-
+                        </div>
+    
                     </div>
-
-
+                    <div class="Departments" data-aos="fade-up"
+                    data-aos-duration="1000">
+                        <div class=" vc_col-sm-12 ">
+                            <div class="inner">
+                                <div class="wpb_wrapper">
+                                    <div class="row cms-grid cms-grid">
+                                        <div class="cms-grid-item cms-grid-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+    
+                                            <div class="department-item">
+                                                <i class="flaticon-heart "></i>
+    
+                                                <h3 class="entry-title">
+                                                    Cardiology </h3>
+                                                <div class="subtitle">
+                                                    We are here to provide a full range of exceptional quality care for
+                                                    dental services.</div>
+                                                <div class="detail-link">
+                                                    <a class="btn-primary" href="">
+    
+                                                        More details
+                                                        <i class="btn-icon fa fa-angle-double-right default"></i>
+    
+    
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-grid-item cms-grid-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="department-item">
+                                                <i class="flaticon-brain "></i>
+    
+    
+                                                <h3 class="entry-title">
+    
+                                                    Neurology </h3>
+                                                <div class="subtitle">
+                                                    We are here to provide a full range of exceptional quality care for
+                                                    dental services.</div>
+                                                <div class="detail-link">
+                                                    <a class="btn-primary" href="">
+    
+                                                        More details
+                                                        <i class="btn-icon fa fa-angle-double-right default"></i>
+    
+    
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-grid-item cms-grid-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="department-item">
+                                                <i class="flaticon-bone"></i>
+    
+    
+                                                <h3 class="entry-title">
+    
+                                                    Prthopaedics </h3>
+                                                <div class="subtitle">
+                                                    We are here to provide a full range of exceptional quality care for
+                                                    dental services.</div>
+                                                <div class="detail-link">
+                                                    <a class="btn-primary" href="">
+    
+                                                        More details
+                                                        <i class="btn-icon fa fa-angle-double-right default"></i>
+    
+    
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-grid-item cms-grid-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="department-item">
+                                                <i class="flaticon-tooth "></i>
+    
+    
+                                                <h3 class="entry-title">
+    
+                                                    Dental Clinic </h3>
+                                                <div class="subtitle">
+                                                    We are here to provide a full range of exceptional quality care for
+                                                    dental services.</div>
+                                                <div class="detail-link">
+                                                    <a class="btn-primary" href="dental-clinic.html">
+    
+                                                        More details
+                                                        <i class="btn-icon fa fa-angle-double-right default"></i>
+    
+    
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-grid-item cms-grid-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="department-item">
+                                                <i class="flaticon-liver "></i>
+    
+    
+                                                <h3 class="entry-title">
+    
+                                                    Pulmonary </h3>
+                                                <div class="subtitle">
+                                                    We are here to provide a full range of exceptional quality care for
+                                                    dental services.</div>
+                                                <div class="detail-link">
+                                                    <a class="btn-primary" href="">
+    
+                                                        More details
+                                                        <i class="btn-icon fa fa-angle-double-right default"></i>
+    
+    
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-grid-item cms-grid-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="department-item">
+                                                <i class="flaticon-stomach "></i>
+    
+                                                <h3 class="entry-title">
+    
+                                                    Urology </h3>
+                                                <div class="subtitle">
+                                                    We are here to provide a full range of exceptional quality care for
+                                                    dental services.</div>
+                                                <div class="detail-link">
+                                                    <a class="btn-primary" href="">
+    
+                                                        More details
+                                                        <i class="btn-icon fa fa-angle-double-right default"></i>
+    
+    
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
                 </div>
             </div>
-
-
+    
+    
         </main>
-        <!-- ADDITIONAL SECTION -->
-        <div class="second-main container " style="display: none;"   >
-        
-            <div class="row">
-                <div class="content-area blog-grid-style-5 col-lg-12">
-
-                    <div class="area-main">
-                        <div class="notices">
-                            <div class="n_info">
-                                Checkout is not available whilst your basket is empty. </div>
+        <!-- Book and appointment -->
+    
+        <div class="appointment">
+            <div class="wvc_col-sm-12 vc_col-has-fill ">
+    
+                <div class=" book vc_column-inner vc_custom_1561103354360">
+    
+                    <div class="red-call-to-action  layout-1" data-aos="fade-up"
+                    data-aos-duration="1000">
+                        <div class="red-cta-content">
+                            <h2 class="cta-title">Contact to book your appointment!</h2>
                         </div>
-                        <p style="margin: 0 0 30px;">Your basket is currently empty.</p>
-                        <p class="return-to-shop" style="padding: 0;">
-                            <a class="button" href="shop.html">
-                                Return to shop </a>
-
-
-                        </p>
+                        <div class="red-cta-content">
+                            <a class="btn btn-lg" href="dental-clinic.html">
+                                <span>Book an Appointment</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- COMPLETED SECTION -->
-        <div class="third-main container" style="padding-top: 90px; display:none;" >
-            <div class="row">
-                <div class="content-area blog-grid-style-5 col-lg-12">
-
-                    <div class="order">
-                        <p style="margin-top: 0;">Thank you. Your order has been received. </p>
-                        <ul class="order-view">
-                            <li class="order">
-
-                                Order number:
-                                <strong>4431</strong>
-                            </li>
-                            <li class="date">
-                                Date:
-                                <strong>April 26, 2020</strong>
-                            </li>
-                            <li class="total">
-
-                                Total:
-                                <strong>
-                                    <span>$</span>
-                                    39.99
-                                </strong>
-                            </li>
-                            <li class="method">
-
-                                Payment method:
-                                <strong>Cash on delivery</strong>
-                            </li>
-
-                        </ul>
-                        <p>Pay with cash upon delivery.</p>
-                        <section class="details" >
-                            <h2 class="order-title">Order details</h2>
-                            <table class="order_details">
-                                <thead>
-                                    <tr>
-                                        <th>Product</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="order_item">
-
-                                        <td class="product-name">
-                                            <a href="#">A Omron 3 Series Blood Pressure
-                                                <strong>× 1</strong>
-                                            </a>
-                                        </td>
-                                        <td class=" product-total">
-                                            <span>
-                                                <span>$</span>
-                                                39.99
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Subtotal:</th>
-                                        <td> <span>
-                                                <span>$</span>
-                                                39.99
-                                            </span></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Shipping:</th>
-                                        <td>Free shipping</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Payment method:</th>
-                                        <td>Cash on delivery</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Total:</th>
-                                        <td> <span>
-                                                <span>$</span>
-                                                39.99
-                                            </span></td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    
         <!-- Footer -->
-        <div class="footer" style="margin-top: 120px;">
+        <div class="footer">
             <div class="container">
                 <div class="row_list">
-
+    
                     <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
                         <div class="inner">
                             <div class="wpb_wrapper">
@@ -688,14 +482,13 @@
                                 </div>
                                 <div class="text-content">
                                     <div class="wpb_wrapper">
-                                        <p>With a background in the healthcare software industry and a desire to build
-                                            great
+                                        <p>With a background in the healthcare software industry and a desire to build great
                                             technology to help companies succeed in making healthcare better.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+    
                     </div>
                     <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
                         <div class="inner">
@@ -736,10 +529,10 @@
                                         <br>
                                         United State.
                                         <br>
-
+    
                                         info@yourdomain.com
                                         <br>
-
+    
                                         +(123) 1800-88-66
                                     </p>
                                 </div>
@@ -758,14 +551,14 @@
                                 </div>
                             </div>
                         </div>
-
+    
                     </div>
                     <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
                         <div class="wpb_wrapper">
                             <h3 class="footer-title left">Instagram</h3>
-                            <div class="red-instagram layout-default footer">
-                                <div class="row-i gutters-5 clearfix">
-
+                            <div class="red-instagram layout-default">
+                                <div class="row gutters-5 clearfix">
+    
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
                                             <img class="icon" src="images/footer-img1.jpg" alt="">
@@ -773,7 +566,7 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+    
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
@@ -790,7 +583,7 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+    
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
@@ -799,7 +592,7 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+    
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
@@ -808,7 +601,7 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+    
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
@@ -817,14 +610,14 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+    
                                     </div>
                                 </div>
-
+    
                             </div>
                         </div>
                     </div>
-
+    
                 </div>
                 <div class="footer-bottom">
                     <div class="left">
@@ -833,7 +626,7 @@
                         </div>
                     </div>
                     <div class="right">
-
+    
                         <div class="condition">
                             <a href="#">
                                 Term & Conditions
@@ -842,7 +635,7 @@
                         <div class="condition">
                             <a href="#">Privacy Policy</a>
                         </div>
-
+    
                     </div>
                 </div>
             </div>
@@ -851,11 +644,12 @@
     <a href="#" class="back-top back-top-visible"><i class="flaticon-up-arrow"></i></a>
 </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/checkout.js"></script>
-
+    <script src="js/departments.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-
 </html>
